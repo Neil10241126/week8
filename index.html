@@ -5,56 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/week8/assets/main-71c30259.js"></script>
-    <link rel="stylesheet" href="/week8/assets/main-accf464b.css">
+    <script type="module" crossorigin src="/week8/assets/index-6c0ca0fd.js"></script>
+    <link rel="stylesheet" href="/week8/assets/index-4b5112ed.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="/week8/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom py-0">
+  <div class="container-lg">
+    <h1><a class="navbar-brand font-Shrikhand fs-32 text-secondary py-16" href="index.html">ALPHABOX+</a></h1>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="icon icon-menu text-secondary" style="font-size: 33px;"></i>
     </button>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="collapse navbar-collapse mx-n12 mx-lg-0 pt-24 pb-32 py-lg-0" id="navbarSupportedContent">
+      <ul class="navbar-nav flex-column flex-lg-row mx-auto mb-2 mb-lg-0">
+        <li class="nav-item mb-4 m-lg-0">
+          <a class="nav-link text-secondary fw-semibold text-center px-20" aria-current="page" href="product.html">產品</a>
+        </li>
+        <li class="nav-item mb-4 m-lg-0">
+          <a class="nav-link text-secondary fw-semibold text-center px-20" href="about.html">關於我們</a>
+        </li>
+        <li class="nav-item mb-4 m-lg-0">
+          <a class="nav-link text-secondary fw-semibold text-center px-20" href="news.html">最新消息</a>
+        </li>
+        <li class="nav-item mb-4 m-lg-0">
+          <a class="nav-link text-secondary fw-semibold text-center px-20" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item mb-4 m-lg-0">
+          <a class="nav-link text-secondary fw-semibold text-center px-20" href="contact.html">聯絡我們</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav flex-column flex-lg-row">
+        <li class="nav-item mb-4 m-lg-0">
+          <a class="nav-link text-secondary fw-semibold text-center px-12" href="#">註冊</a>
+        </li>
+        <li class="nav-item mb-4 m-lg-0">
+          <a class="nav-link text-secondary fw-semibold text-center px-12" href="#">登入</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-secondary border-0 fw-semibold d-flex align-items-center py-8 px-16 mx-auto ms-lg-20"><i class="icon icon-flare icon-2 me-4"></i>訂閱</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <button class="btn btn-primary">按鈕</button> -->
+    <div class="bg-primary pt-28 pt-lg-56 uti-bg-linear-gradient">
+      <div class="container-fluid px-lg-80">
+        <div class="d-flex flex-column flex-lg-row-reverse justify-content-between align-items-center mb-56">
+          <p class="w-100 fw-bold text-secondary border-top align-self-stretch align-self-lg-start pt-8">ALPHABOX+ STUDIO</p>
+          <div class="w-100">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGICAMAAABsnYcUAAAAZlBMVEUAAAD////////9/f3////////////////////////////////////////////////////Z2dnZ2dnZ2dnZ2dna2trZ2dnZ2dn////Z2dnX19f////Y2Nja2trZ2dna2tr////Z2dkz/0fCAAAAIHRSTlMAIN8Q72Cgv0CAkHBQMLDPf+/fkLCggHBvQCDQ0L9gz+hNOLQAAAyTSURBVHja7N3LktsgEAVQ3kjoYS9Tlc39/69M0IyNrHGlRopsGLhnlUU0lbjdDbSAEURERERERERvN01aUH4dYATl5wF0gnKT+KsXlJuDmuEFZSYBNwAcrnNzgOyAQVBWErEsmaO16ZeVgs7glhnTDKPFAVpBOYbinIRQQojh4ATWImIoTkkIG7/ZQBAHKODCUJyVENEF5lhCKCEd/roKutNirwDY2x+6QwkRH19C4QQtpDNu9zMKRurPflN/pEmlbj+IkbjRB1p3VyzUxc+AP9KksreQGvarbvz+j0JhTR4dYKKeKXEzAGH3WDvboXezvyjsX1y7dTkbGg6EHrwTyQRcdieEXNV7v79rO9+fdw13cNOokD7XnQnh1k8bvTMhIt/dvgVody2xGRUCMBxIiPT0uDchggKg7CStiXWxWX0qB6m6HEwI0e0s8tf496VV+OQbbqRvPnltYPSBhEhPH8mnGIrZuVG0zABaJJc9E9hxmwFu1/TX3r8EOkC1Ozx8cKtRoQsK+wq11mLN7nparcI2QzVcl6IRmMVf2jqDhRGH6c4O+9p9N13DU9c0gdVy8Fj4XgGTeLXU7ruLUWmbBxQi4wedplEv1z189BMDMSBSodNpGvUO/r6Uixya344jAdNPm2nUG8hlTFL2vqq2onGbxYB720cie7Xk4jhewcr0pa1h39kDTatq0/o64uvi+r0bu61H5BkHodOokPqAb6Q7yy1mi/mxaTo03QXNaPtmbGr4RVle21GBhSIXz+0TZeib77gVogNmQQUIXeMvA+i/dEPfj5xZZKavBjxakd9ocGN4eC+f6xKBYMfhwpMVGbkYBnvr4DISuYSH3WhScUGax3Wz6WcyzW/GyUIucVjredo+BwX83r5SKXLrgewmUbHxyXtVV95NIB/rHFXxloj5SYuyL+5oxa8YhroPLZsnH/pcWCD0Mr92s0K9o5d+drxMlVWapALUuASk3v0p8knPvovBKUcsS7MWC1/vu56HQBT4v9VhXY+6erfOeZjtN7CsY5AXwD9UTVGnfrsndCrsZkf5cCzTV3sRq940NCZTWvaPSM0vWfFr6AG4pEhYg+IO4IU0V3I1b3N3wEWuRkZTXCfhPkxc6z734QBlpRDT1aC8fFgNE6HIf925uY+ij8kvw4T0tcdhdbDCF/pKKADGNHHcYAzez6HQMHwME9xWXwJpKp64/igjgLavFylFqLfz+sNcymoKt0u2fRdYQToOE4XgMFGKol5ZtUxyqzoRERERERERERERvUkocU9gg2y15wp/Fqmq3pj9c7T8+wZLYks7V9QoqYo68NguFqYy2LqPUJVrc0OPVNzolYc2MJe5H6cGznaWLeBTDMeVv4khG9k7b5AMvHU7I92N/XyPh/FhqPtyt8LFkdrgQ8UXWZXPA1bobggfuWFYo/JYj9RLODh/ykKee/qf6XSUOncJ4Wq/0+FVTl5C2KovEH2h8eRrSUaF+BNZsXaSqTCdRDo8SQrLNPk394KDzvZrUkhV/XVA/1+YtEjOTwr2FL/bg+1EcnZS8GXHt4UgkvOTgi87vmvSInlVUjj2r7JJScHClN9HUnQsTNlJx8Z6IawC960VQTruWyuEZWEiIiIiIiIiIiIiIiIiIiIiIiIiIvrD3p0txQ0DUQDVLstrPAwzgUBy9f8/mUkyDoQlGAJxW77nhSqeoFRSy61Wi4iItiUaNjITwfG5bxkMGwXIwIEQIrJPuAwcCBlsj771PqXAC6EL6aIxDncqRYvQmDhjYh84EAuxyfu20jXbmMjQwKg3s51PoVb0DvybBkK3vu4Hhx84EO/Cw71uCjShNwCj/HurADVPGwaHP5i+blpue99HB1g1S8SZGUKd+DDLO9N9sGoWALHxlVY/tGDWdikJQNB37xax9fRStLnrKzpgUPJdHfe7MefxZn+4UiVJU19Ru4IQYQ9jvmd3ea3K0Z0nRSU+RNiL/EhJQ2FrAEYn6e37jmN+wu6rKoc3AJzwfpYX+RkXqhw64KRXctnb/KybkjZ7jQOc4I6WN/kvblVB9ACglxolzuvSFlan80ZWZv3H1/yCoyqJNgAkHnRf7/ILxpLCxEmSGbIv88mWFielKiOwFOc6z1DYlFBWYMXBZZ7hoOij7fIMo6IPdpVnKSsXK9Eh/7StHaxE+zzLXtHH+pZn2Sn6WGPOjNYS5JmUMI3MdNH2BiLKzaFua2lypT2Xv8uz3ChhtJGbzt7Y9tVLTWe/zTHntSabdADgSlmfVp3i6AyAUjpBjGv+nuuBYtanQ57hUsk0YAilBG2bZ5Ba8QfU5/1TAZPiYr0TogOaaf9Ur34o7PhihJA6IdrzPThdxvp0zC8QWwB7d+lEB8mFY8UXmEW4aVp3yQGCiynnuV1VduOOQVRK+7o3hdzXtd/ys27lltJ0gBkwcbGW+6cWW5bf+XpwmLi+9muPD5Ovu/yEUWbRQMJvpi/t5vr15RPTQehcj/jBhKYS+gf+61Ds8j3jQex/6Yodg8nVYf9tzHnc7Y8y862/FD0GRERERERERERERKsV3epLb8rQsz+7DEF+y9FtSKtowrsBXniry82YXjzQhdxxWStbASEMBlyhFtPW/eAw4Qq1mBpnX0LyXVmVaavi+7rxnR0E9vTbJH5ICFFLbDe6RQ3DtAwtnCIBtPTnPLbCJs9CZiIiIiIiIiJ6FV6vLk29/iZlRdAABiZNlxcKavK6Zh6IpXVmXyUDaB1wYlbfMm7NPgPp9ENHrk+L0gbGTs8VlPaIx5oEwKuzBIaKpWjAPHg5ApHr0/8XH5RdVIahYgkeCA9/xa3sEpLRT71sU0AX6rWx6jEdWTkphG8VEREREREREQmieRNehuBYxiaBB5tDiGAAHnEI8Als0iGBLuNh7PULPPETwbOlmQyGHTpE+AQ2SF5Ip+7RDoYfc8sIcEMMyVedVSrwE2Ix1mHiBtZwLqgNMRrc40zsQ2rast8Glsp2lQ+4jxmnxQSgqtomhTg4nDAJu4BHVc66ahv2b38NfssV5hODggiaSSYZ+C0ngweiouUxUsvQ8nz0CVWn/jfreD76yOclDo0TI/VD1uAVhwLsjPZxtAEfOxGhAw8sZfC8xS5EAsDOWN/bu5Mdt2EYAMNaqMVbPMcCvfzv/5SdtCNk6yWKEdkKv+MAc0gck7RIWXsQQbSe3AG/6uTjLlgHrFpTtpYF0FWH5gIwzfrWvtZmkGzMhLYImrIOWcy3EUT79+1cemVJS6eGLKTL+p8OBTczw3yJUtrBbGaA2RRZJx8beNzmbH/Db80SbdjLMtPiIGqOaORSK/0SjUstLQJuClPSrkRjAUBP69iB2QHIsN/0kEcHkkL3hcQ8jDs+CN8mAD3BorVfArDGJDrl0NIXwODLuQmrUU18AW4pQWrV9lUjAfjtTeFXrbGbsO7nOhRWdPdpC/GhRTLoLdGABRZzw2uWaCD+51sX3QVZY/sdXrod9f0WSA9/0ybi+2UYzZ2gOeL9Mgz/iVYHOvfLf3WxJmMf74ivY6UI18l+B4eYG/Zg44hDJ8uU909v1h3rhjAWxHTAC2Kvr8PhNtSkTmLTfL3EsTj2n6l9SN5cTL0UeQPI9FOAyBESxHhb6fluXpE3AG4MUxRAdn8dTL7rXaUD/HieGW3gMCf9O8h9vhDJDo6zdIxf1l3F6gX6iE1nOYT5KJ/mvmIdtYHSSKlYS4nRT2w6mEvF6qfEX7ojroVSseYkAGvS2e5vNgwhm/dKEPIoADJmkztZ5thgWNPFxbxRBgGQU+5qmaOedRTrGweYvQCkyXe2BFsvAcOyzJGzmM2bjHDyPS5zVMqUEt6GFd5XRmZIPS7B1hohmmJxzwSInLN5gdx+89OHP0okmG9Hc+rbCAmeSDLD3RLsh8+JRsiVi2/T3e1jn/rvh4r1hHxybAowVS1HP/6GI4QXGnPLJ1+Gbwln686rKHdT4XAfOTSwEb/i7GWKtqLweWqqrcvG3BbyNKwQc9U5CQL+JlV/5tDABvzVXlQ7Q3q6vzPYM19S9VMCorHpnwRuynN0APJ053jhxmye4yeNTP8ESn4ICSpCdoLiYFNt+3K6qlvsCWJFf+c0DWfaUHjFCvmlWWAvJTEkPRBpo6mWDK4qyXjzzfYyrNfGCKfr5+L63RlRK9FXWIFozZmlLrb8xCanqfoliwMX7Au7vUbIxoRuZiZbsSeAmEu6qIpNmqo3UJ4gqI0tCdFUvY0lCsBUPcaag6bqbfhQH1s8DElT9WZsMJUSq6bqPQigqXoPvGiq3ocpHWKXklJKKaWUUkqpLvwBRraTrN0e0xIAAAAASUVORK5CYII=" alt="circle" width="196" class="mx-auto py-32 py-lg-0">
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <p class="w-100 fw-bold text-secondary border-bottom align-self-lg-end d-none d-lg-inline-block pb-8">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+        </div>
+
+        <div class="text-secondary text-center d-lg-none mb-32">
+          <table class="table mb-0">
+            <tr class="fs-20 font-Shrikhand text-secondary">
+              <td class="border-0 p-0">A</td>
+              <td class="border-0 p-0">L</td>
+              <td class="border-0 p-0">P</td>
+              <td class="border-0 p-0">H</td>
+              <td class="border-0 p-0">A</td>
+              <td class="border-0 p-0">B</td>
+              <td class="border-0 p-0">O</td>
+              <td class="border-0 p-0">X</td>
+              <td class="border-0 p-0">+</td>
+            </tr>
+          </table>
+          <p class="fw-bold px-8" style="letter-spacing: 6px;">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+        </div>
+
+        <div class="row align-items-top">
+          <div class="col-12 col-sm-6 col-lg-3 mb-16 order-sm-0 mb-lg-0">
+            <div class="card h-100 bg-dark text-white border-0">
+              <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                <img src="/week8/assets/diane-aa7d0596.png" class="card-img h-100 uti-objfit-cover" alt="diane">
+                <div class="card-img-overlay">
+                  <h3 class="card-title fs-32 font-Shrikhand text-center">Diane</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 order-sm-2 order-lg-1">
+            <div class="text-secondary text-center d-none d-lg-block mb-24">
+              <table class="table mb-0">
+                <tr class="fs-32 font-Shrikhand text-secondary">
+                  <td class="border-0 p-0">A</td>
+                  <td class="border-0 p-0">L</td>
+                  <td class="border-0 p-0">P</td>
+                  <td class="border-0 p-0">H</td>
+                  <td class="border-0 p-0">A</td>
+                  <td class="border-0 p-0">B</td>
+                  <td class="border-0 p-0">O</td>
+                  <td class="border-0 p-0">X</td>
+                  <td class="border-0 p-0">+</td>
+                </tr>
+              </table>
+              <p class="fw-bold" style="letter-spacing: 14px;">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+                <div class="card bg-dark text-white border-0">
+                  <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                    <img src="/week8/assets/felix-7868b60e.png" class="card-img h-100 uti-objfit-cover" alt="felix">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title fs-32 font-Shrikhand text-center">felix</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+                <div class="card bg-dark text-white border-0">
+                  <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                    <img src="/week8/assets/karina-ba0556e2.png" class="card-img h-100 uti-objfit-cover" alt="karina">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title fs-32 font-Shrikhand text-center">karina</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-lg-3 order-sm-1 order-lg-2 mb-sm-16 mb-lg-0">
+            <div class="card h-100 bg-dark text-white border-0">
+              <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                <img src="/week8/assets/vito-6007043a.png" class="card-img h-100 h-100 uti-objfit-cover" alt="vito">
+                <div class="card-img-overlay">
+                  <h3 class="card-title fs-32 font-Shrikhand text-center">vito</h3>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 
-    <footer class="footer">我是 footer</footer>
+    
+
+    <footer class="container-lg py-40 py-lg-52">
+  <div class="position-lg-relative d-flex flex-column flex-lg-row justify-content-between align-items-lg-center ps-28 ps-lg-0">
+    <div>
+      <a href="index.html" class="fs-32 font-Shrikhand text-dark">ALPHABOX+</a>
+      <p class="fw-bold d-none d-lg-block">Copyright © 2023 Hexschool.</p>
+    </div>
+    <i class="icon icon-emergency position-lg-absolute top-50 start-50 translate-middle-lg my-8 my-lg-0" style="font-size: 60px;"></i>
+
+    <ul class="d-flex flex-column flex-lg-row align-items-lg-center">
+      <li class="border-0 mb-8 mb-lg-0 ms-lg-24"><a href="about.html" class="text-dark fw-bold d-inline-block">關於我們</a></li>
+      <li class="border-0 mb-8 mb-lg-0 ms-lg-24"><a href="products.html" class="text-dark fw-bold d-inline-block">產品資訊</a></li>
+      <li class="border-0 mb-8 mb-lg-0 ms-lg-24"><a href="faq.html" class="text-dark fw-bold d-inline-block">常見問題</a></li>
+      <li class="border-0 mb-8 mb-lg-0 ms-lg-24"><a href="#" class="text-dark fw-bold d-inline-block">隱私政策</a></li>
+    </ul>
+    <p class="fw-bold d-lg-none">Copyright © 2023 Hexschool.</p>
+  </div>
+</footer>
     
   </body>
 </html>
