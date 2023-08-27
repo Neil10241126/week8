@@ -7,48 +7,106 @@
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/nav'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="bg-primary pt-28 pt-lg-56 uti-bg-linear-gradient">
+      <div class="container-fluid px-lg-80">
+        <div class="d-flex flex-column flex-lg-row-reverse justify-content-between align-items-center mb-56">
+          <p class="w-100 fw-bold text-secondary border-top align-self-stretch align-self-lg-start pt-8">ALPHABOX+ STUDIO</p>
+          <div class="w-100">
+            <img src="../assets/images/circle.png" alt="circle" width="196" class="mx-auto py-32 py-lg-0">
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <p class="w-100 fw-bold text-secondary border-bottom align-self-lg-end d-none d-lg-inline-block pb-8">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+        </div>
+
+        <div class="text-secondary text-center d-lg-none mb-32">
+          <table class="table mb-0">
+            <tr class="fs-20 font-Shrikhand text-secondary">
+              <td class="border-0 p-0">A</td>
+              <td class="border-0 p-0">L</td>
+              <td class="border-0 p-0">P</td>
+              <td class="border-0 p-0">H</td>
+              <td class="border-0 p-0">A</td>
+              <td class="border-0 p-0">B</td>
+              <td class="border-0 p-0">O</td>
+              <td class="border-0 p-0">X</td>
+              <td class="border-0 p-0">+</td>
+            </tr>
+          </table>
+          <p class="fw-bold px-8" style="letter-spacing: 6px;">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+        </div>
+
+        <div class="row align-items-top">
+          <div class="col-12 col-sm-6 col-lg-3 mb-16 order-sm-0 mb-lg-0">
+            <div class="card h-100 bg-dark text-white border-0">
+              <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                <img src="../assets/images/diane.png" class="card-img h-100 uti-objfit-cover" alt="diane">
+                <div class="card-img-overlay">
+                  <h3 class="card-title fs-32 font-Shrikhand text-center">Diane</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 order-sm-2 order-lg-1">
+            <div class="text-secondary text-center d-none d-lg-block mb-24">
+              <table class="table mb-0">
+                <tr class="fs-32 font-Shrikhand text-secondary">
+                  <td class="border-0 p-0">A</td>
+                  <td class="border-0 p-0">L</td>
+                  <td class="border-0 p-0">P</td>
+                  <td class="border-0 p-0">H</td>
+                  <td class="border-0 p-0">A</td>
+                  <td class="border-0 p-0">B</td>
+                  <td class="border-0 p-0">O</td>
+                  <td class="border-0 p-0">X</td>
+                  <td class="border-0 p-0">+</td>
+                </tr>
+              </table>
+              <p class="fw-bold" style="letter-spacing: 14px;">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+                <div class="card bg-dark text-white border-0">
+                  <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                    <img src="../assets/images/felix.png" class="card-img h-100 uti-objfit-cover" alt="felix">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title fs-32 font-Shrikhand text-center">felix</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+                <div class="card bg-dark text-white border-0">
+                  <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                    <img src="../assets/images/karina.png" class="card-img h-100 uti-objfit-cover" alt="karina">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title fs-32 font-Shrikhand text-center">karina</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-lg-3 order-sm-1 order-lg-2 mb-sm-16 mb-lg-0">
+            <div class="card h-100 bg-dark text-white border-0">
+              <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
+                <img src="../assets/images/vito.png" class="card-img h-100 h-100 uti-objfit-cover" alt="vito">
+                <div class="card-img-overlay">
+                  <h3 class="card-title fs-32 font-Shrikhand text-center">vito</h3>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
+
+    
 
     <%- include('./layout/footer'); -%>
 

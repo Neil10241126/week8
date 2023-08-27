@@ -1,0 +1,66 @@
+// 1.字形變數
+$font-family-type: (
+  NotoSansTC: ('Noto Sans TC', sans-serif),
+  Shrikhand: ('Shrikhand', cursive),
+);
+
+@each $name, $type in $font-family-type {
+  .font-#{$name} {
+    font-family: $type;
+  }
+}
+
+// 2.icon 變數
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+$icon-type: (
+  arrow_circle_right: '\eaaa',
+  arrow_circle_left: '\eaa7',
+  emergency: '\e1eb',
+  flare: '\e3e4',
+  menu: '\e5d2',
+);
+// icon 基礎設定
+// icon 管理指南 : https://developers.google.com/fonts/docs/material_icons?hl=zh-tw
+.icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* 預設大小 24px */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@each $icon-name, $code-point in $icon-type {
+  .icon-#{$icon-name} {
+    &::before {
+      content: $code-point;
+    }
+  }
+}
+// icon 尺寸
+$icon-size-type: (
+  1: 36px,
+  2: 24px,
+  3: 18px,
+);
+
+@each $icon-name, $size in $icon-size-type {
+  .icon-#{$icon-name} {
+    font-size: $size;
+  }
+}

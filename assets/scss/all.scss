@@ -1,11 +1,15 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+// 字體載入
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Shrikhand&display=swap');
 
+// 1. vendors (外部套件)
+@import './vendors/bootstrap';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// 2. utils (工具)
+@import './utils/base',
+        './utils/helpers',
+        './utils/mixin',
+        './utils/utilities';
 
-
-@import './pages/index.scss';
-
-@import "../../node_modules/bootstrap";
+// 3. components (元件)
+@import './components/nav',
+        './components/img';
