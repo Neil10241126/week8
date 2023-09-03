@@ -2,6 +2,14 @@
   object-fit: cover;
 }
 
-.uti-bg-linear-gradient {
-  background: linear-gradient(180deg, #7000ff, #11002d);
+.uti-bg-linear-gradient-vert {
+  background: linear-gradient(90deg, #7000ff, #11002d);
+}
+
+.uti-inset-0 {
+  inset: 0;
+}
+
+.uti-trasition-03 {
+  transition: 0.3s;
 }

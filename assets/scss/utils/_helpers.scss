@@ -2,6 +2,7 @@
 $font-family-type: (
   NotoSansTC: ('Noto Sans TC', sans-serif),
   Shrikhand: ('Shrikhand', cursive),
+  SairaExtraCond: ('Saira Extra Condensed', sans-serif),
 );
 
 @each $name, $type in $font-family-type {
@@ -19,6 +20,7 @@ $icon-type: (
   emergency: '\e1eb',
   flare: '\e3e4',
   menu: '\e5d2',
+  circle: '\ef4a',
 );
 // icon 基礎設定
 // icon 管理指南 : https://developers.google.com/fonts/docs/material_icons?hl=zh-tw

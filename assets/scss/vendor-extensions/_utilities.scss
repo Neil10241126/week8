@@ -69,19 +69,23 @@ $utilities: map-merge(
       values: static relative absolute fixed sticky
     ),
     "top": (
+      responsive: true,  //  setting
       property: top,
       values: $position-values
     ),
     "bottom": (
+      responsive: true,  //  setting
       property: bottom,
       values: $position-values
     ),
     "start": (
+      responsive: true,  //  setting
       property: left,
       class: start,
       values: $position-values
     ),
     "end": (
+      responsive: true,  //  setting
       property: right,
       class: end,
       values: $position-values
@@ -114,6 +118,7 @@ $utilities: map-merge(
       )
     ),
     "border-end": (
+      responsive: true, // setting
       property: border-right,
       class: border-end,
       values: (
@@ -122,6 +127,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true, // setting
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -165,6 +171,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true, // setting
       property: width,
       class: w,
       values: (
@@ -645,8 +652,24 @@ $utilities: map-merge(
         visible: visible,
         invisible: hidden,
       )
-    )
+    ),
     // scss-docs-end utils-visibility
+    // setting 
+    "letting-spacing": (
+      responsive: true,
+      print: true,
+      property: letter-spacing,
+      class: letter,
+      values: (
+        0: 0px,
+        16: 16px,
+        20: 20px,
+        24: 24px,
+        32: 32px,
+        40: 40px,
+        48: 48px,
+      ),
+    ),
   ),
   $utilities
 );
