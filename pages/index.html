@@ -9,14 +9,14 @@
   <body>
     <%- include('./layout/nav'); -%>
 
-    <div class="pt-28 pt-lg-56 mt-70 uti-objfit-cover" style="background-image: url(../assets/images/home_background.png); background-size: cover;">
+    <div class="pt-28 pt-lg-56 mt-70 uti-objfit-cover overflow-hidden" style="background-image: url(../assets/images/home_background.png); background-size: cover;">
       <div class="container-fluid px-lg-80">
         <div class="d-flex flex-column flex-lg-row-reverse justify-content-between align-items-center mb-56">
-          <p class="w-100 fw-bold text-secondary border-top align-self-stretch align-self-lg-start pt-8">ALPHABOX+ STUDIO</p>
+          <p class="g-fade-right w-100 fw-bold text-secondary border-top align-self-stretch align-self-lg-start pt-8">ALPHABOX+ STUDIO</p>
           <div class="w-100">
-            <img src="../assets/images/circle.png" alt="circle" width="196" class="mx-auto py-32 py-lg-0">
+            <img id="circle" src="../assets/images/circle.png" alt="circle" width="196" class="mx-auto py-32 py-lg-0">
           </div>
-          <p class="w-100 fw-bold text-secondary border-bottom align-self-lg-end d-none d-lg-inline-block pb-8">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+          <p class="g-fade-left w-100 fw-bold text-secondary border-bottom align-self-lg-end d-none d-lg-inline-block pb-8">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
         </div>
 
         <div class="text-secondary text-center d-lg-none mb-32">
@@ -38,7 +38,7 @@
 
         <div class="row align-items-top position-relative"
          style="transform: translateY(104px); margin-top: -104px; z-index: 100;">
-          <div class="col-12 col-sm-6 col-lg-3 mb-16 order-sm-0 mb-lg-0">
+          <div id="g-ainma-1" class="g-fade-left col-12 col-sm-6 col-lg-3 mb-16 order-sm-0 mb-lg-0">
             <div class="card h-100 bg-dark text-white border-0">
               <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                 <img src="../assets/images/diane.png" class="card-img h-100 uti-objfit-cover" alt="diane">
@@ -68,7 +68,7 @@
             </div>
 
             <div class="row">
-              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+              <div id="g-ainma-2" class="g-fade-up col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
                 <div class="card bg-dark text-white border-0">
                   <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                     <img src="../assets/images/felix.png" class="card-img h-100 uti-objfit-cover" alt="felix">
@@ -78,7 +78,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+              <div id="g-ainma-3" class="g-fade-up col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
                 <div class="card bg-dark text-white border-0">
                   <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                     <img src="../assets/images/karina.png" class="card-img h-100 uti-objfit-cover" alt="karina">
@@ -92,7 +92,7 @@
           </div>
 
 
-          <div class="col-12 col-sm-6 col-lg-3 order-sm-1 order-lg-2 mb-sm-16 mb-lg-0">
+          <div id="g-ainma-4" class="g-fade-right col-12 col-sm-6 col-lg-3 order-sm-1 order-lg-2 mb-sm-16 mb-lg-0">
             <div class="card h-100 bg-dark text-white border-0">
               <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                 <img src="../assets/images/vito.png" class="card-img h-100 uti-objfit-cover" alt="vito">
@@ -108,17 +108,17 @@
     </div>
 
 
-    <div style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+    <div class="uti-bg-radial-gradient">
       <div class="position-relative">
         <img src="../assets/images/carousel_mobile.png" alt="carousel_mobile" style="max-width: 50%; height: 1089px; object-fit: cover; filter: blur(10px);">
         <div class="container-fluid px-lg-80 position-absolute top-0">
           <div class="uti-bg-linear-gradient-vert mt-144 mb-8" style="height: 40px;"></div>
-          <div>
+          <div class="g-fade-left">
             <p class="fs-24 fs-lg-48 fw-bold text-secondary letter-24 letter-lg-48 mb-12">什麼是</p>
             <p class="fs-24 fs-lg-48 fw-bold text-secondary letter-24 letter-lg-48">ALPHABOX+</p>
           </div>
           <hr class="mx-lg-n80 border-secondary mb-32">
-          <div class="d-flex align-items-center">
+          <div id="g-swiper" class="d-flex align-items-center">
             <div class="swipter-prev d-none d-xl-inline-block me-52"
               onmouseover="this.style.opacity='0.5'"
               onmouseout="this.style.opacity='1'"
@@ -126,7 +126,7 @@
               <img src="../assets/images/line_end_arrow_notch.svg" alt="line_end_arrow_notch">
             </div>
 
-            <div class="swiper" id="swiper">
+            <div class="g-zoom-in swiper container" id="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="position-relative">
@@ -164,11 +164,10 @@
       </div>
     </div>
 
-    <div class="d-flex align-items-center justify-content-center pt-60 pb-80 pt-lg-160 pb-lg-40"
-      style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+    <div class="d-flex align-items-center justify-content-center pt-60 pb-80 pt-lg-160 pb-lg-40 uti-bg-radial-gradient overflow-hidden">
       <div class="container">
-        <h2 class="fs-40 fs-lg-48 fw-bold text-center text-md-start letter-40 letter-lg-48 mb-32 mb-lg-40">最新消息</h2>
-        <div class="border-top border-bottom py-32 py-lg-40 px-16">
+        <h2 class="g-fade-left fs-40 fs-lg-48 fw-bold text-center text-md-start letter-40 letter-lg-48 mb-32 mb-lg-40">最新消息</h2>
+        <div class="g-fade-left border-top border-bottom py-32 py-lg-40 px-16">
           <p class="d-flex align-items-center fw-bold letter-16 mb-8"><i class="icon icon-emergency me-16"></i>2023.06.30</p>
           <h3 class="fs-20 fw-bold letter-20 mb-12">產品升級公告</h3>
           <div class="row">
@@ -185,7 +184,7 @@
           </div>
         </div>
 
-        <div class="row px-12">
+        <div class="g-fade-left row px-12">
           <div class="col-12 col-lg-6 border-end-lg border-bottom-lg">
             <div class="py-32 py-lg-40 px-16 border-bottom border-lg-0">
               <p class="d-flex align-items-center fw-bold letter-16 mb-8"><i class="icon icon-emergency me-16"></i>2023.06.30</p>
@@ -224,24 +223,24 @@
           </div>
         </div>
         <div class="d-flex justify-content-center mt-40 mt-lg-76 mb-0 mb-lg-96">
-          <a href="#" class="d-inline-block"><img src="../assets/images/check_more.svg" alt="check_more"></a>
+          <a href="#" class="g-fade-up d-inline-block"><img src="../assets/images/check_more.svg" alt="check_more"></a>
         </div>
-        <p class="fw-bold text-end d-none d-lg-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+        <p class="g-fade-right fw-bold text-end d-none d-lg-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
       </div>
     </div>
 
-    <div class="pt-60 pb-80 pt-lg-160 pb-lg-40" style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+    <div class="pt-60 pb-80 pt-lg-160 pb-lg-40 overflow-hidden uti-bg-radial-gradient">
       <div class="container">
         <div class="row gy-24 mb-24 mb-lg-40">
-          <div class="col-12 col-lg-5">
+          <div class="g-fade-left col-12 col-lg-5">
             <h2 class="fs-40 fs-lg-48 fw-bold letter-40 letter-lg-48 mb-16">使用分享</h2>
             <p class="fw-bold">01<span class="mx-4">—</span>04</p>
           </div>
           <div class="col-12 col-lg-7">
-            <p class="fw-bold">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+            <p class="g-fade-right fw-bold">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
           </div>
         </div>
-        <i class="icon icon-emergency fs-60 text-secondary mb-16 mb-lg-24"></i>
+        <i class="g-fade-left icon icon-emergency fs-60 text-secondary mb-16 mb-lg-24"></i>
       </div>
 
       <div class="overflow-hidden">
@@ -298,7 +297,7 @@
                 <p class="fw-bold">SCROLL</p>
               </div>
             </div>
-            <p class="fw-bold d-none d-lg-block mt-136">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+            <p class="g-fade-left fw-bold d-none d-lg-block mt-136">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
           </div>
         </div>
       </div>
@@ -306,10 +305,10 @@
 
     </div>
 
-    <div class="bg-normal pt-60 pb-80 py-lg-144">
+    <div class="bg-normal pt-60 pb-80 py-lg-144 overflow-hidden">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-5 mb-24 mb-lg-0">
+          <div class="g-fade-left col-12 col-lg-5 mb-24 mb-lg-0">
             <h2 class="fs-40 fs-lg-48 fw-bold letter-40 letter-lg-48 mb-12 mb-lg-20">聯絡我們</h2>
             <div class="d-flex align-items-center mb-36 mb-lg-54">
               <i class="icon icon-circle text-secondary fs-12 me-8"></i>
@@ -318,7 +317,7 @@
             <p class="fw-bold mb-4">讓科技成為您的最佳夥伴</p>
             <p class="fw-bold">立即體驗神奇功能並享限時優惠！</p>
           </div>
-          <div class="col-12 col-lg-7">
+          <div class="g-fade-right col-12 col-lg-7">
             <i class="icon icon-emergency text-secondary fs-80 mb-16"></i>
             <form action="#">
               <div class="form-floating mb-16">
@@ -338,107 +337,106 @@
       </div>
     </div>
 
-    <div>
-      <div class="container-fluid px-0">
-        <div class="row row-cols-2 row-cols-lg-4 g-0">
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="../assets/images/diane_vertical.png" alt="diane_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="../assets/images/diane_vertical.png" alt="diane_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+    <div class="container-fluid px-0 bg-info">
+      <div id="g-position" class="row row-cols-2 row-cols-lg-4 g-0">
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="../assets/images/diane_vertical.png" alt="diane_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="../assets/images/diane_vertical.png" alt="diane_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-1 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">1</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Diane</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">1</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Diane</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">知識型<br><span class="fw-normal">學術領導/知識分享/智能問答</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">知識型<br><span class="fw-normal">學術領導/知識分享/智能問答</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
-          
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="../assets/images/felix_vertical.png" alt="felix_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="../assets/images/felix_vertical.png" alt="felix_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="../assets/images/felix_vertical.png" alt="felix_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="../assets/images/felix_vertical.png" alt="felix_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-2 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">2</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Felix</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">2</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Felix</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">娛樂型<br><span class="fw-normal">音樂播放/語音互動/遊戲陪伴</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">娛樂型<br><span class="fw-normal">音樂播放/語音互動/遊戲陪伴</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
+        </div>
 
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="../assets/images/karina_verticalgle.png" alt="karina_verticalgle" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="../assets/images/karina_verticalgle.png" alt="karina_verticalgle" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="../assets/images/karina_verticalgle.png" alt="karina_verticalgle" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="../assets/images/karina_verticalgle.png" alt="karina_verticalgle" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-3 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">3</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Karina</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">3</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Karina</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">生活型<br><span class="fw-normal">健康提醒/日程安排/智能家居</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">生活型<br><span class="fw-normal">健康提醒/日程安排/智能家居</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
+        </div>
 
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="../assets/images/vito_vertical.png" alt="vito_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="../assets/images/vito_vertical.png" alt="vito_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="../assets/images/vito_vertical.png" alt="vito_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="../assets/images/vito_vertical.png" alt="vito_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-4 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">4</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Vito</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">4</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Vito</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">情感型<br><span class="fw-normal">情感識別/心情分析/心靈支持</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">情感型<br><span class="fw-normal">情感識別/心情分析/心靈支持</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="../assets/images/line_end_arrow.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
+
     
     <%- include('./layout/footer'); -%>
 

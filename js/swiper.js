@@ -1,7 +1,5 @@
 import Swiper from "swiper";
-
 import { Navigation, Autoplay, Scrollbar } from 'swiper/modules';
-// import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation'; 'swiper/css/autoplay'; 'swiper/css/scrollbar';
 
@@ -22,7 +20,6 @@ const swiper = new Swiper('#swiper', {
 
 
 const swiperUser = new Swiper('#swiperUser', {
-  // configure Swiper to use modules
   modules: [Scrollbar],
   loop: false,
   direction: "vertical",
@@ -46,7 +43,6 @@ const swiperUser = new Swiper('#swiperUser', {
 });
 
 const swiperProduct = new Swiper('.swiper-product', {
-  // 套用模組
   modules: [Navigation, Autoplay],
   speed: 700,
   autoplay: {
