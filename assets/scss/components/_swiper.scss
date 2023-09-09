@@ -1,3 +1,28 @@
 .swiper {
   height: auto;
 }
+
+.swiper-initial {
+  overflow: initial;
+}
+
+/* 滾動條可拖曳區塊的顏色 */
+.swiper-scrollbar-drag {
+  background-color: white !important;
+  height: 4px;
+}
+
+/* 整個滾動條的背景顏色 */
+.swiper-scrollbar {
+  background-color: gray !important;
+}
+
+.swiper-card-size {
+  height: 351px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include media-breakpoint-up(lg) {
+    height: 451px;
+  }
+}
