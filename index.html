@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALPHABOX+首頁</title>
-    <script type="module" crossorigin src="/week8/assets/bootstrap.min-0572f8e1.js"></script>
-    <link rel="stylesheet" href="/week8/assets/bootstrap-2ee32665.css">
+    <script type="module" crossorigin src="/week8/assets/swiper-196aaa2c.js"></script>
+    <link rel="stylesheet" href="/week8/assets/swiper-2bf846ff.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom py-0 position-fixed top-0 start-0 end-0"
@@ -52,14 +52,14 @@
 </nav>
 
 
-    <div class="pt-28 pt-lg-56 mt-70 uti-objfit-cover" style="background-image: url(/week8/assets/home_background-395fa867.png); background-size: cover;">
+    <div class="pt-28 pt-lg-56 mt-70 uti-objfit-cover overflow-hidden" style="background-image: url(/week8/assets/home_background-395fa867.png); background-size: cover;">
       <div class="container-fluid px-lg-80">
         <div class="d-flex flex-column flex-lg-row-reverse justify-content-between align-items-center mb-56">
-          <p class="w-100 fw-bold text-secondary border-top align-self-stretch align-self-lg-start pt-8">ALPHABOX+ STUDIO</p>
+          <p class="g-fade-right w-100 fw-bold text-secondary border-top align-self-stretch align-self-lg-start pt-8">ALPHABOX+ STUDIO</p>
           <div class="w-100">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGICAMAAABsnYcUAAAAZlBMVEUAAAD////////9/f3////////////////////////////////////////////////////Z2dnZ2dnZ2dnZ2dna2trZ2dnZ2dn////Z2dnX19f////Y2Nja2trZ2dna2tr////Z2dkz/0fCAAAAIHRSTlMAIN8Q72Cgv0CAkHBQMLDPf+/fkLCggHBvQCDQ0L9gz+hNOLQAAAyTSURBVHja7N3LktsgEAVQ3kjoYS9Tlc39/69M0IyNrHGlRopsGLhnlUU0lbjdDbSAEURERERERERvN01aUH4dYATl5wF0gnKT+KsXlJuDmuEFZSYBNwAcrnNzgOyAQVBWErEsmaO16ZeVgs7glhnTDKPFAVpBOYbinIRQQojh4ATWImIoTkkIG7/ZQBAHKODCUJyVENEF5lhCKCEd/roKutNirwDY2x+6QwkRH19C4QQtpDNu9zMKRurPflN/pEmlbj+IkbjRB1p3VyzUxc+AP9KksreQGvarbvz+j0JhTR4dYKKeKXEzAGH3WDvboXezvyjsX1y7dTkbGg6EHrwTyQRcdieEXNV7v79rO9+fdw13cNOokD7XnQnh1k8bvTMhIt/dvgVody2xGRUCMBxIiPT0uDchggKg7CStiXWxWX0qB6m6HEwI0e0s8tf496VV+OQbbqRvPnltYPSBhEhPH8mnGIrZuVG0zABaJJc9E9hxmwFu1/TX3r8EOkC1Ozx8cKtRoQsK+wq11mLN7nparcI2QzVcl6IRmMVf2jqDhRGH6c4O+9p9N13DU9c0gdVy8Fj4XgGTeLXU7ruLUWmbBxQi4wedplEv1z189BMDMSBSodNpGvUO/r6Uixya344jAdNPm2nUG8hlTFL2vqq2onGbxYB720cie7Xk4jhewcr0pa1h39kDTatq0/o64uvi+r0bu61H5BkHodOokPqAb6Q7yy1mi/mxaTo03QXNaPtmbGr4RVle21GBhSIXz+0TZeib77gVogNmQQUIXeMvA+i/dEPfj5xZZKavBjxakd9ocGN4eC+f6xKBYMfhwpMVGbkYBnvr4DISuYSH3WhScUGax3Wz6WcyzW/GyUIucVjredo+BwX83r5SKXLrgewmUbHxyXtVV95NIB/rHFXxloj5SYuyL+5oxa8YhroPLZsn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" alt="circle" width="196" class="mx-auto py-32 py-lg-0">
+            <img id="circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGICAMAAABsnYcUAAAAZlBMVEUAAAD////////9/f3////////////////////////////////////////////////////Z2dnZ2dnZ2dnZ2dna2trZ2dnZ2dn////Z2dnX19f////Y2Nja2trZ2dna2tr////Z2dkz/0fCAAAAIHRSTlMAIN8Q72Cgv0CAkHBQMLDPf+/fkLCggHBvQCDQ0L9gz+hNOLQAAAyTSURBVHja7N3LktsgEAVQ3kjoYS9Tlc39/69M0IyNrHGlRopsGLhnlUU0lbjdDbSAEURERERERERvN01aUH4dYATl5wF0gnKT+KsXlJuDmuEFZSYBNwAcrnNzgOyAQVBWErEsmaO16ZeVgs7glhnTDKPFAVpBOYbinIRQQojh4ATWImIoTkkIG7/ZQBAHKODCUJyVENEF5lhCKCEd/roKutNirwDY2x+6QwkRH19C4QQtpDNu9zMKRurPflN/pEmlbj+IkbjRB1p3VyzUxc+AP9KksreQGvarbvz+j0JhTR4dYKKeKXEzAGH3WDvboXezvyjsX1y7dTkbGg6EHrwTyQRcdieEXNV7v79rO9+fdw13cNOokD7XnQnh1k8bvTMhIt/dvgVody2xGRUCMBxIiPT0uDchggKg7CStiXWxWX0qB6m6HEwI0e0s8tf496VV+OQbbqRvPnltYPSBhEhPH8mnGIrZuVG0zABaJJc9E9hxmwFu1/TX3r8EOkC1Ozx8cKtRoQsK+wq11mLN7nparcI2QzVcl6IRmMVf2jqDhRGH6c4O+9p9N13DU9c0gdVy8Fj4XgGTeLXU7ruLUWmbBxQi4wedplEv1z189BMDMSBSodNpGvUO/r6Uixya344jAdNPm2nUG8hlTFL2vqq2onGbxYB720cie7Xk4jhewcr0pa1h39kDTatq0/o64uvi+r0bu61H5BkHodOokPqAb6Q7yy1mi/mxaTo03QXNaPtmbGr4RVle21GBhSIXz+0TZeib77gVogNmQQUIXeMvA+i/dEPfj5xZZKavBjxakd9ocGN4eC+f6xKBYMfhwpMVGbkYBnvr4DISuYSH3WhScUGax3Wz6WcyzW/GyUIucVjredo+BwX83r5SKXLrgewmUbHxyXtVV95NIB/rHFXxloj5SYuyL+5oxa8YhroPLZsn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" alt="circle" width="196" class="mx-auto py-32 py-lg-0">
           </div>
-          <p class="w-100 fw-bold text-secondary border-bottom align-self-lg-end d-none d-lg-inline-block pb-8">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+          <p class="g-fade-left w-100 fw-bold text-secondary border-bottom align-self-lg-end d-none d-lg-inline-block pb-8">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
         </div>
 
         <div class="text-secondary text-center d-lg-none mb-32">
@@ -81,7 +81,7 @@
 
         <div class="row align-items-top position-relative"
          style="transform: translateY(104px); margin-top: -104px; z-index: 100;">
-          <div class="col-12 col-sm-6 col-lg-3 mb-16 order-sm-0 mb-lg-0">
+          <div id="g-ainma-1" class="g-fade-left col-12 col-sm-6 col-lg-3 mb-16 order-sm-0 mb-lg-0">
             <div class="card h-100 bg-dark text-white border-0">
               <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                 <img src="/week8/assets/diane-aa7d0596.png" class="card-img h-100 uti-objfit-cover" alt="diane">
@@ -111,7 +111,7 @@
             </div>
 
             <div class="row">
-              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+              <div id="g-ainma-2" class="g-fade-up col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
                 <div class="card bg-dark text-white border-0">
                   <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                     <img src="/week8/assets/felix-7868b60e.png" class="card-img h-100 uti-objfit-cover" alt="felix">
@@ -121,7 +121,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
+              <div id="g-ainma-3" class="g-fade-up col-12 col-sm-6 col-lg-6 mb-16 mb-sm-0">
                 <div class="card bg-dark text-white border-0">
                   <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                     <img src="/week8/assets/karina-ba0556e2.png" class="card-img h-100 uti-objfit-cover" alt="karina">
@@ -135,7 +135,7 @@
           </div>
 
 
-          <div class="col-12 col-sm-6 col-lg-3 order-sm-1 order-lg-2 mb-sm-16 mb-lg-0">
+          <div id="g-ainma-4" class="g-fade-right col-12 col-sm-6 col-lg-3 order-sm-1 order-lg-2 mb-sm-16 mb-lg-0">
             <div class="card h-100 bg-dark text-white border-0">
               <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
                 <img src="/week8/assets/vito-6007043a.png" class="card-img h-100 uti-objfit-cover" alt="vito">
@@ -151,17 +151,17 @@
     </div>
 
 
-    <div style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+    <div class="uti-bg-radial-gradient">
       <div class="position-relative">
         <img src="/week8/assets/carousel_mobile-1bfb21fb.png" alt="carousel_mobile" style="max-width: 50%; height: 1089px; object-fit: cover; filter: blur(10px);">
         <div class="container-fluid px-lg-80 position-absolute top-0">
           <div class="uti-bg-linear-gradient-vert mt-144 mb-8" style="height: 40px;"></div>
-          <div>
+          <div class="g-fade-left">
             <p class="fs-24 fs-lg-48 fw-bold text-secondary letter-24 letter-lg-48 mb-12">什麼是</p>
             <p class="fs-24 fs-lg-48 fw-bold text-secondary letter-24 letter-lg-48">ALPHABOX+</p>
           </div>
           <hr class="mx-lg-n80 border-secondary mb-32">
-          <div class="d-flex align-items-center">
+          <div id="g-swiper" class="d-flex align-items-center">
             <div class="swipter-prev d-none d-xl-inline-block me-52"
               onmouseover="this.style.opacity='0.5'"
               onmouseout="this.style.opacity='1'"
@@ -169,7 +169,7 @@
               <img src="/week8/assets/line_end_arrow_notch-edab468c.svg" alt="line_end_arrow_notch">
             </div>
 
-            <div class="swiper" id="swiper">
+            <div class="g-zoom-in swiper container" id="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="position-relative">
@@ -207,11 +207,10 @@
       </div>
     </div>
 
-    <div class="d-flex align-items-center justify-content-center pt-60 pb-80 pt-lg-160 pb-lg-40"
-      style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+    <div class="d-flex align-items-center justify-content-center pt-60 pb-80 pt-lg-160 pb-lg-40 uti-bg-radial-gradient overflow-hidden">
       <div class="container">
-        <h2 class="fs-40 fs-lg-48 fw-bold text-center text-md-start letter-40 letter-lg-48 mb-32 mb-lg-40">最新消息</h2>
-        <div class="border-top border-bottom py-32 py-lg-40 px-16">
+        <h2 class="g-fade-left fs-40 fs-lg-48 fw-bold text-center text-md-start letter-40 letter-lg-48 mb-32 mb-lg-40">最新消息</h2>
+        <div class="g-fade-left border-top border-bottom py-32 py-lg-40 px-16">
           <p class="d-flex align-items-center fw-bold letter-16 mb-8"><i class="icon icon-emergency me-16"></i>2023.06.30</p>
           <h3 class="fs-20 fw-bold letter-20 mb-12">產品升級公告</h3>
           <div class="row">
@@ -228,7 +227,7 @@
           </div>
         </div>
 
-        <div class="row px-12">
+        <div class="g-fade-left row px-12">
           <div class="col-12 col-lg-6 border-end-lg border-bottom-lg">
             <div class="py-32 py-lg-40 px-16 border-bottom border-lg-0">
               <p class="d-flex align-items-center fw-bold letter-16 mb-8"><i class="icon icon-emergency me-16"></i>2023.06.30</p>
@@ -267,24 +266,24 @@
           </div>
         </div>
         <div class="d-flex justify-content-center mt-40 mt-lg-76 mb-0 mb-lg-96">
-          <a href="#" class="d-inline-block"><img src="/week8/assets/check_more-860704dc.svg" alt="check_more"></a>
+          <a href="#" class="g-fade-up d-inline-block"><img src="/week8/assets/check_more-860704dc.svg" alt="check_more"></a>
         </div>
-        <p class="fw-bold text-end d-none d-lg-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+        <p class="g-fade-right fw-bold text-end d-none d-lg-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
       </div>
     </div>
 
-    <div class="pt-60 pb-80 pt-lg-160 pb-lg-40" style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+    <div class="pt-60 pb-80 pt-lg-160 pb-lg-40 overflow-hidden uti-bg-radial-gradient">
       <div class="container">
         <div class="row gy-24 mb-24 mb-lg-40">
-          <div class="col-12 col-lg-5">
+          <div class="g-fade-left col-12 col-lg-5">
             <h2 class="fs-40 fs-lg-48 fw-bold letter-40 letter-lg-48 mb-16">使用分享</h2>
             <p class="fw-bold">01<span class="mx-4">—</span>04</p>
           </div>
           <div class="col-12 col-lg-7">
-            <p class="fw-bold">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+            <p class="g-fade-right fw-bold">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
           </div>
         </div>
-        <i class="icon icon-emergency fs-60 text-secondary mb-16 mb-lg-24"></i>
+        <i class="g-fade-left icon icon-emergency fs-60 text-secondary mb-16 mb-lg-24"></i>
       </div>
 
       <div class="overflow-hidden">
@@ -341,7 +340,7 @@
                 <p class="fw-bold">SCROLL</p>
               </div>
             </div>
-            <p class="fw-bold d-none d-lg-block mt-136">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+            <p class="g-fade-left fw-bold d-none d-lg-block mt-136">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
           </div>
         </div>
       </div>
@@ -349,10 +348,10 @@
 
     </div>
 
-    <div class="bg-normal pt-60 pb-80 py-lg-144">
+    <div class="bg-normal pt-60 pb-80 py-lg-144 overflow-hidden">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-5 mb-24 mb-lg-0">
+          <div class="g-fade-left col-12 col-lg-5 mb-24 mb-lg-0">
             <h2 class="fs-40 fs-lg-48 fw-bold letter-40 letter-lg-48 mb-12 mb-lg-20">聯絡我們</h2>
             <div class="d-flex align-items-center mb-36 mb-lg-54">
               <i class="icon icon-circle text-secondary fs-12 me-8"></i>
@@ -361,7 +360,7 @@
             <p class="fw-bold mb-4">讓科技成為您的最佳夥伴</p>
             <p class="fw-bold">立即體驗神奇功能並享限時優惠！</p>
           </div>
-          <div class="col-12 col-lg-7">
+          <div class="g-fade-right col-12 col-lg-7">
             <i class="icon icon-emergency text-secondary fs-80 mb-16"></i>
             <form action="#">
               <div class="form-floating mb-16">
@@ -381,107 +380,106 @@
       </div>
     </div>
 
-    <div>
-      <div class="container-fluid px-0">
-        <div class="row row-cols-2 row-cols-lg-4 g-0">
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="/week8/assets/diane_vertical-d74bc037.png" alt="diane_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="/week8/assets/diane_vertical-d74bc037.png" alt="diane_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+    <div class="container-fluid px-0 bg-info">
+      <div id="g-position" class="row row-cols-2 row-cols-lg-4 g-0">
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="/week8/assets/diane_vertical-d74bc037.png" alt="diane_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="/week8/assets/diane_vertical-d74bc037.png" alt="diane_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-1 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">1</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Diane</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">1</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Diane</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">知識型<br><span class="fw-normal">學術領導/知識分享/智能問答</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">知識型<br><span class="fw-normal">學術領導/知識分享/智能問答</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
-          
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="/week8/assets/felix_vertical-67f7bb16.png" alt="felix_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="/week8/assets/felix_vertical-67f7bb16.png" alt="felix_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="/week8/assets/felix_vertical-67f7bb16.png" alt="felix_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="/week8/assets/felix_vertical-67f7bb16.png" alt="felix_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-2 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">2</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Felix</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">2</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Felix</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">娛樂型<br><span class="fw-normal">音樂播放/語音互動/遊戲陪伴</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">娛樂型<br><span class="fw-normal">音樂播放/語音互動/遊戲陪伴</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
+        </div>
 
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="/week8/assets/karina_verticalgle-1f56a906.png" alt="karina_verticalgle" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="/week8/assets/karina_verticalgle-1f56a906.png" alt="karina_verticalgle" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="/week8/assets/karina_verticalgle-1f56a906.png" alt="karina_verticalgle" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="/week8/assets/karina_verticalgle-1f56a906.png" alt="karina_verticalgle" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-3 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">3</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Karina</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">3</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Karina</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">生活型<br><span class="fw-normal">健康提醒/日程安排/智能家居</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">生活型<br><span class="fw-normal">健康提醒/日程安排/智能家居</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
+        </div>
 
-          <div class="col">
-            <a class="position-relative" href="#"
-              onmouseover="this.querySelector('span').style.opacity='40%'" 
-              onmouseout="this.querySelector('span').style.opacity='1'">
-              <div class="position-relative">
-                <img src="/week8/assets/vito_vertical-1a3d7131.png" alt="vito_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
-                <img src="/week8/assets/vito_vertical-1a3d7131.png" alt="vito_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
-                <span class="position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+        <div class="col">
+          <a class="position-relative" href="#"
+            onmouseover="this.querySelector('span').style.opacity='40%'" 
+            onmouseout="this.querySelector('span').style.opacity='1'">
+            <div class="position-relative">
+              <img src="/week8/assets/vito_vertical-1a3d7131.png" alt="vito_vertical" class="uti-objfit-cover d-none d-lg-block" style="height: 876px; width: 100%;">
+              <img src="/week8/assets/vito_vertical-1a3d7131.png" alt="vito_vertical" class="uti-objfit-cover d-block d-lg-none" style="min-height: 406px;">
+              <span class="g-animation-4 position-absolute bg-dark uti-inset-0 uti-trasition-03"></span>
+            </div>
+            <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
+              <div>
+                <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">4</p>
+                <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Vito</h2>
               </div>
-              <div class="position-absolute uti-inset-0 d-flex flex-column justify-content-between px-12 py-24 px-lg-40">
-                <div>
-                  <p class="fs-128 fs-sm-200 fs-md-300 fs-lg-400 font-SairaExtraCond text-center mb-20">4</p>
-                  <h2 class="fs-24 fs-sm-32 font-Shrikhand fst-italic text-center">Vito</h2>
+              <div class="row gx-0 flex-xl-row align-items-xl-end">
+                <div class="col-12 col-xl-6">
+                  <p class="fw-bold">情感型<br><span class="fw-normal">情感識別/心情分析/心靈支持</span></p>
                 </div>
-                <div class="row gx-0 flex-xl-row align-items-xl-end">
-                  <div class="col-12 col-xl-6">
-                    <p class="fw-bold">情感型<br><span class="fw-normal">情感識別/心情分析/心靈支持</span></p>
-                  </div>
-                  <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
-                </div>
+                <div class="col-12 col-xl-6"><img src="/week8/assets/line_end_arrow-7066a5f2.svg" alt="line_end_arrow" class="ms-xl-auto"></div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
+
     
     <footer class="container-lg py-40 py-lg-52">
   <div class="position-lg-relative d-flex flex-column flex-lg-row justify-content-between align-items-lg-center ps-28 ps-lg-0">
