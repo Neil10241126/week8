@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/week8/assets/index-e8b0b526.js"></script>
-    <link rel="stylesheet" href="/week8/assets/index-2d055112.css">
+    <title>ALPHABOX+首頁</title>
+    <script type="module" crossorigin src="/week8/assets/bootstrap.min-0572f8e1.js"></script>
+    <link rel="stylesheet" href="/week8/assets/bootstrap-2ee32665.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom py-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom py-0 position-fixed top-0 start-0 end-0"
+  style="z-index: 1000;">
   <div class="container-lg">
     <h1><a class="navbar-brand font-Shrikhand fs-32 text-secondary py-16" href="index.html">ALPHABOX+</a></h1>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +52,7 @@
 </nav>
 
 
-    <div class="pt-28 pt-lg-56"
-      style="background-image: url(/week8/assets/home_background-395fa867.png); background-size: cover; object-fit: cover;">
+    <div class="pt-28 pt-lg-56 mt-70 uti-objfit-cover" style="background-image: url(/week8/assets/home_background-395fa867.png); background-size: cover;">
       <div class="container-fluid px-lg-80">
         <div class="d-flex flex-column flex-lg-row-reverse justify-content-between align-items-center mb-56">
           <p class="w-100 fw-bold text-secondary border-top align-self-stretch align-self-lg-start pt-8">ALPHABOX+ STUDIO</p>
@@ -76,10 +76,11 @@
               <td class="border-0 p-0">+</td>
             </tr>
           </table>
-          <p class="fw-bold px-8" style="letter-spacing: 6px;">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+          <p class="fw-bold px-8 letter-6">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
         </div>
 
-        <div class="row align-items-top position-relative" style="transform: translateY(104px); margin-top: -104px; z-index: 100;">
+        <div class="row align-items-top position-relative"
+         style="transform: translateY(104px); margin-top: -104px; z-index: 100;">
           <div class="col-12 col-sm-6 col-lg-3 mb-16 order-sm-0 mb-lg-0">
             <div class="card h-100 bg-dark text-white border-0">
               <a href="#" class="img_hover link-secondary w-100 h-100 overflow-hidden">
@@ -106,7 +107,7 @@
                   <td class="border-0 p-0">+</td>
                 </tr>
               </table>
-              <p class="fw-bold" style="letter-spacing: 14px;">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+              <p class="fw-bold letter-14">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
             </div>
 
             <div class="row">
@@ -161,11 +162,14 @@
           </div>
           <hr class="mx-lg-n80 border-secondary mb-32">
           <div class="d-flex align-items-center">
-            <div class="swipter-prev d-none d-xl-inline-block me-52" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'"
+            <div class="swipter-prev d-none d-xl-inline-block me-52"
+              onmouseover="this.style.opacity='0.5'"
+              onmouseout="this.style.opacity='1'"
               style="transform: rotate(180deg); z-index: 10; left: -172px;">
-                <img src="/week8/assets/line_end_arrow_notch-edab468c.svg" alt="">
-              </div>
-            <div class="swiper container">
+              <img src="/week8/assets/line_end_arrow_notch-edab468c.svg" alt="line_end_arrow_notch">
+            </div>
+
+            <div class="swiper" id="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="position-relative">
@@ -191,8 +195,10 @@
                 </div>
               </div>
             </div>
-            <div class="swipter-next d-none d-xl-inline-block ms-52" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'">
-              <img src="/week8/assets/line_end_arrow_notch-edab468c.svg" alt="">
+            <div class="swipter-next d-none d-xl-inline-block ms-52"
+              onmouseover="this.style.opacity='0.5'"
+              onmouseout="this.style.opacity='1'">
+              <img src="/week8/assets/line_end_arrow_notch-edab468c.svg" alt="line_end_arrow_notch">
             </div>
           </div>
   
@@ -202,7 +208,7 @@
     </div>
 
     <div class="d-flex align-items-center justify-content-center pt-60 pb-80 pt-lg-160 pb-lg-40"
-    style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+      style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
       <div class="container">
         <h2 class="fs-40 fs-lg-48 fw-bold text-center text-md-start letter-40 letter-lg-48 mb-32 mb-lg-40">最新消息</h2>
         <div class="border-top border-bottom py-32 py-lg-40 px-16">
@@ -215,8 +221,9 @@
             <div class="col-12 col-lg-3 d-flex">
               <a href="#" class="d-inline-block ms-lg-auto"
                 onmouseover="this.style.opacity='0.5'"
-                onmouseout="this.style.opacity='1'"
-                ><img src="/week8/assets/line_end_arrow_md-e0eff574.svg" alt="line_end_arrow_md"></a>
+                onmouseout="this.style.opacity='1'">
+                <img src="/week8/assets/line_end_arrow_md-e0eff574.svg" alt="line_end_arrow_md">
+              </a>
             </div>
           </div>
         </div>
@@ -233,8 +240,9 @@
                 <div class="col-12">
                   <a href="#" class="d-inline-block ms-lg-auto"
                     onmouseover="this.style.opacity='0.5'"
-                    onmouseout="this.style.opacity='1'"
-                    ><img src="/week8/assets/line_end_arrow_sm-979b56a4.svg" alt="line_end_arrow_md"></a>
+                    onmouseout="this.style.opacity='1'">
+                    <img src="/week8/assets/line_end_arrow_sm-979b56a4.svg" alt="line_end_arrow_md">
+                  </a>
                 </div>
               </div>
             </div>
@@ -250,8 +258,9 @@
                 <div class="col-12">
                   <a href="#" class="d-inline-block ms-lg-auto"
                     onmouseover="this.style.opacity='0.5'"
-                    onmouseout="this.style.opacity='1'"
-                    ><img src="/week8/assets/line_end_arrow_sm-979b56a4.svg" alt="line_end_arrow_md"></a>
+                    onmouseout="this.style.opacity='1'">
+                    <img src="/week8/assets/line_end_arrow_sm-979b56a4.svg" alt="line_end_arrow_md">
+                  </a>
                 </div>
               </div>
             </div>
@@ -262,6 +271,82 @@
         </div>
         <p class="fw-bold text-end d-none d-lg-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
       </div>
+    </div>
+
+    <div class="pt-60 pb-80 pt-lg-160 pb-lg-40" style="background: radial-gradient(circle, rgba(48,8,113,1) 0%, rgba(0,0,0,1) 100%);">
+      <div class="container">
+        <div class="row gy-24 mb-24 mb-lg-40">
+          <div class="col-12 col-lg-5">
+            <h2 class="fs-40 fs-lg-48 fw-bold letter-40 letter-lg-48 mb-16">使用分享</h2>
+            <p class="fw-bold">01<span class="mx-4">—</span>04</p>
+          </div>
+          <div class="col-12 col-lg-7">
+            <p class="fw-bold">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+          </div>
+        </div>
+        <i class="icon icon-emergency fs-60 text-secondary mb-16 mb-lg-24"></i>
+      </div>
+
+      <div class="overflow-hidden">
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper swiper-initial" id="swiperUser">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper d-flex flex-wrap flex-lg-nowrap">
+              <!-- Slides -->
+              <div class="swiper-slide col-12 col-lg-4 text-secondary mb-24 mb-lg-0">
+                <div class="card swiper-card-size bg-info p-24 p-lg-40">
+                  <div>
+                    <p class="fw-bold d-flex align-items-center mb-32">Zona<i class="icon icon-circle fs-8 mx-8"></i>Taipei</p>
+                    <p class="fw-bold">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+                  </div>
+                  <p class="fw-bold d-flex align-items-center"><i class="icon icon-circle fs-16"></i><i class="icon icon-circle fs-16 mx-16"></i>ALPHABOX+ Dianne</p>
+                </div>
+              </div>
+              <div class="swiper-slide col-12 col-lg-4 text-secondary mb-24 mb-lg-0">
+                <div class="card swiper-card-size bg-secondary p-24 p-lg-40">
+                  <div>
+                    <p class="fw-bold text-dark d-flex align-items-center mb-32">Lin <i class="icon icon-circle fs-8 mx-8"></i>Chiayi</p>
+                    <p class="fw-bold text-dark">非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+                  </div>
+                  <p class="fw-bold text-dark d-flex align-items-center"><i class="icon icon-circle fs-16"></i><i class="icon icon-circle fs-16 mx-16"></i>ALPHABOX+ Felix</p>
+                </div>
+              </div>
+              <div class="swiper-slide col-12 col-lg-4 text-secondary mb-24 mb-lg-0">
+                <div class="card swiper-card-size bg-info p-24 p-lg-40">
+                  <div>
+                    <p class="fw-bold d-flex align-items-center mb-32">云 <i class="icon icon-circle fs-8 mx-8"></i>Taipei</p>
+                    <p class="fw-bold">我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+                  </div>
+                  <p class="fw-bold d-flex align-items-center"><i class="icon icon-circle fs-16"></i><i class="icon icon-circle fs-16 mx-16"></i>ALPHABOX+ Dianne</p>
+                </div>
+              </div>
+              <div class="swiper-slide col-12 col-lg-4 text-secondary mb-24 mb-lg-0">
+                <div class="card swiper-card-size bg-secondary p-24 p-lg-40">
+                  <div>
+                    <p class="fw-bold text-dark d-flex align-items-center mb-32">Zichi<i class="icon icon-circle fs-8 mx-8"></i>Kaohsiung</p>
+                    <p class="fw-bold text-dark">讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+                  </div>
+                  <p class="fw-bold text-dark d-flex align-items-center"><i class="icon icon-circle fs-16"></i><i class="icon icon-circle fs-16 mx-16"></i>ALPHABOX+ Vito</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- If we need scrollbar -->
+            <div class="row align-items-center d-none d-lg-flex mt-48">
+              <div class="col-8">
+                <div class="swiper-scrollbar position-static"></div>
+              </div>
+              <div class="col-1">
+                <p class="fw-bold">SCROLL</p>
+              </div>
+            </div>
+            <p class="fw-bold d-none d-lg-block mt-136">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
     <div class="bg-normal pt-60 pb-80 py-lg-144">
